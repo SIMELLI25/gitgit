@@ -1,7 +1,7 @@
 input("ES 1")
 
 c1 = input("nome primo candidato: ")
-c2 = input("nome secondo candidato :")
+c2 = input("nome secondo candidato: ")
 nvoti = int(input("Quanti voti ci sono? "))
 voti = 0
 listavoti1 = []
@@ -33,7 +33,7 @@ input("ES 2")
 cand1 = input("Nome primo candidato: ")
 cand2 = input("nome secondo candidato: ")
 punt1 = int(input("punteggio primo candidato: "))
-punt2 = int(input("punteggio secondo candidato; "))
+punt2 = int(input("punteggio secondo candidato: "))
 listcand = []
 listpunt = []
 listcand.append(cand1)
@@ -61,3 +61,17 @@ while True:
     if guad == -1:
         print("la media è", media)
         break
+
+input("ES 4")
+
+listveic = []
+count = 0
+while True:
+    print("Quando vuoi terminare digita 0")
+    nveic = int(input("Quanti veicoli sono passati oggi? "))
+    if nveic != 0:
+        listveic.append(nveic)
+        count = count + 1
+    if nveic == 0:
+        break
+print("In totale in", count, "giorni sono passati", sum(listveic), "veicoli")
